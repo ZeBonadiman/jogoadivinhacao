@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#secretNumber {
+    font-size: 50px;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sec{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.col{
+    text-align: center;
+}
