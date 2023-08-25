@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Variáveis do jogo
-  var numeroAdivinhar = Math.floor(Math.random() * 100) + 1; // Número a ser adivinhado
+  var numeroAdivinhar = Math.floor(Math.random() * 200) + 1; // Número a ser adivinhado
   var tentativasRestantes = 10; // Tentativas restantes
   var jogoTerminado = false; // Indicador de fim de jogo
 
@@ -13,8 +13,8 @@ $(document).ready(function() {
     var adivinhar = parseInt($('#adivinhar').val()); // Palpite do jogador
 
     // Verificar se o palpite é válido
-    if (isNaN(adivinhar) || adivinhar < 1 || adivinhar > 100) {
-      $('#result').text('Digite um número válido entre 1 e 100.');
+    if (isNaN(adivinhar) || adivinhar < 1 || adivinhar > 200) {
+      $('#result').text('Digite um número válido entre 1 e 200.');
       return;
     }
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
   // Reiniciar o jogo ao clicar no botão "Jogar Novamente"
   $('#restart').on('click', function() {
-    numeroAdivinhar = Math.floor(Math.random() * 100) + 1; // Gerar novo número a ser adivinhado
+    numeroAdivinhar = Math.floor(Math.random() * 200) + 1; // Gerar novo número a ser adivinhado
     tentativasRestantes = 10; // Resetar tentativas restantes
     jogoTerminado = false; // Resetar indicador de fim de jogo
     $('#result').text(''); // Limpar resultado
